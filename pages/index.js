@@ -47,22 +47,33 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10 ">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">ProCreate</p>
-              <p className="text-gray-800 py-1">Photoshop</p>
+              <h4 className="py-4 text-teal-600 font-semibold">Technical skills</h4>
+              <p className="text-gray-800 py-1">HTML</p>
+              <p className="text-gray-800 py-1">CSS</p>
+              <p className="text-gray-800 py-1">Javascript</p>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">C#</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <h4 className="py-4 text-teal-600">Technologies</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">ProCreate</p>
-              <p className="text-gray-800 py-1">Photoshop</p>
+              <h4 className="py-4 text-teal-600 font-semibold">Design tools I use</h4>
+              <p className="italic text-gray-800 py-1">Figma</p>
+              <p className="italic text-gray-800 py-1">Procreate</p>
+              <p className="italic text-gray-800 py-1">Photoshop</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <h4 className="py-4 text-teal-600 font-semibold">Education</h4>
+              <p className="text-gray-800 py-1">Webbutvecklare .NET <br/>
+              <span className="italic text-gray-800 py-1 text-sm">Campus Värnamo</span></p>
+              <p className="text-gray-800 py-2">Mediaprogrammet
+              <br/>
+              <span className="italic text-gray-800 py-1 text-sm">Filbornaskolan</span></p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <h4 className="py-4 text-teal-600">Languages</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">ProCreate</p>
-              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Swedish</p>
+              <p className="text-gray-800 py-1">English</p>
+              <p className="text-gray-800 py-1">German</p>
+              <p className="text-gray-800 py-1">Albanian</p>
             </div>
           </div>
         </section>
