@@ -3,24 +3,35 @@ body {
     padding: 0;
     color: white;
     font-family: "Lato", sans-serif;
+    -ms-overflow-style: none;
     background: linear-gradient(
         165deg,
         #a772f7,
         #9635ce,
         #b25be4
     );
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none; 
 }
 
 .hero,
-.contact,
+.contact,   
 .activities,
 .projects {
     width: min(1000px, 90vw);
-    margin-left: 20vw;
+    margin-left: clamp(1rem, 10vw, 15rem);
+    box-sizing: border-box;
 }
 
 .hero {
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,12 +39,13 @@ body {
 }
 
 .hero h1 {
-    font-size: 86px;
+    font-size: clamp(4rem, 7vw, 5rem);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.07em;
-    line-height: 0.5;
+    line-height: 0.4;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -147,7 +159,7 @@ body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 
@@ -179,4 +191,22 @@ body {
 
 .project a:hover {
     color: white;
+}
+
+@media (max-width: 768px) {
+    .story-line-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-buttons a {
+        text-align: center;
+    }
 }
